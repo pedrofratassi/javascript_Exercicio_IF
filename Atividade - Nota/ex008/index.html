@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 08</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(to left, #30A0E6, #E69A30);
+        }
+
+        input{
+            display: block;
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 2em;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        button{
+            padding: 10px;
+            font-size: 1.2em;
+            color: white;          
+        }
+
+        #container{
+            margin: 0 auto;
+            width: auto;
+            display: table;
+            text-align: center;
+        }
+
+        #converter{
+            background-color: #29E041;
+        }
+
+        #limpar{
+            background-color: #2094FA;
+        }
+
+        #converter:hover{
+            background-color: #6A45F5;
+        }
+
+        #limpar:hover{
+            background-color: #E01401;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Exercício 08</h1>
+        <p>Criar uma função que converta uma temperatura de Celsius para Fahrenheit</p>
+        <h2>Conversor de Temperatura</h2>
+        <input type="text" name="c" id="celsius" value="" placeholder="Celsius">
+        <input type="text" name="f" id="fahrenheit" value="" placeholder="Fahrenheit">
+        
+        <button id="converter">Converter</button>
+        <button id="limpar" onclick="clear()">Limpar Tela</button>
+    </div>
+
+    <script src="conversorTemperatura.js"></script>
+</body>
+</html>

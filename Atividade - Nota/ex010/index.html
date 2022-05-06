@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 010</title>
+</head>
+<body>
+    <h1>Exercício 010</h1>
+    <p>Localizar o maior valor dentro de um array de números</p>
+
+    <script>
+        let vetor = [0, 7, 14, 21, 28, 35]
+        let aux = 0
+
+        window.console.log(vetor)
+
+        for(i = 0; i < vetor.length; i++){
+            if(aux < vetor[i]){
+            aux = vetor[i]  
+            }
+        }
+        window.console.log(`-------------------------------------------------------------------------------------------------`)
+        window.console.log(`O maior número dentro do Vetor é: ${aux}`)
+    </script>
+</body>
+</html>
